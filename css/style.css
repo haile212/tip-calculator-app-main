@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:hsl(185, 41%, 84%);
+    color:  hsl(186, 14%, 43%);
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap:50px;
+    font-family: 'Space Mono', monospace,sans-serif;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color:white;
+    min-height: 30vh;
+    padding: 25px 25px;
+    gap: 10px;
+    border-radius: 15px;
+}
+input{
+    font-family: 'Space Mono';
+    font-weight: 700;
+    border: 1px solid hsl(175,85%,13%);
+}
+.input-platform{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+#bill-input{
+    background-image: url(../images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-color:hsl(189, 41%, 97%);
+    background-position: 10px;
+    background-size: 13px;
+    text-align: end;
+    width: 100%;
+    color:hsl(175,85%,13%)   ;
+    font-size: 24px;
+
+}
+.tip-list{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+}
+.btn{
+    width: 110px;
+    height: 50px;
+    font-size: 20px;
+}
+.inactive{
+    background-color:  hsl(183, 100%, 15%);
+    color: white;
+
+}
+.actives{
+    background-color:  hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+#custom-tip{
+    text-align: center;
+    width: 110px;
+    height: 50px;
+    background-color: white;
+    color: #000;
+}
+#people-num{
+   width: 100%;
+   font-size: 24px;
+   background-image: url(../images/icon-person.svg);
+   background-repeat: no-repeat;
+   background-color:hsl(189, 41%, 97%);
+   background-position: 10px;
+   background-size: 13px;
+   text-align: end;
+   width: 100%;
+   font-size: 24px;
+
+}
+.result-platform{
+    position: relative;
+   background-color: hsl(183, 100%, 15%);
+   display: flex;
+   flex-direction: column;
+   padding: 10px;
+   border-radius: 10px;
+}
+.tip-amount{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(189, 41%, 97%);
+    
+}
+.dark-color{
+    color:   hsl(184, 14%, 56%);
+}
+.tip-amount h2{
+    color: hsl(172, 67%, 45%);
+    font-size: 34px;
+}
+.total{
+    display: flex;
+    justify-content: space-between;
+    color: hsl(189, 41%, 97%);
+}
+.total h2{
+    color: hsl(172, 67%, 45%);
+    font-size:34px;
+}
+.reset{
+    position: absolute;
+    width: 80%;
+    bottom: 20px;
+    right: 35px;
+    font-size: 24px;
+    background-position: center;
+
+    border-color: hsl(183, 100%, 15%);
+    color:  hsl(186, 14%, 43%);
+}
+
+
+@media (max-width:650px) {
+    body{
+        justify-content: flex-start;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 100%;
+    }
+}
